@@ -168,3 +168,16 @@ createSubmit.setAttribute('type', 'submit')
 createSubmit.setAttribute('id', 'Submit')
 createSubmit.textContent = 'Submit'
 questionsDiv.appendChild(createSubmit)
+
+    createSubmit.addEventListener("click", function () {
+        var initials = createInput.value;
+
+        if (initials === null) {
+
+            console.log("No value entered!");
+
+        } else {
+            var finalScore = {
+                initials: initials,
+                score: timeRemaining
+            }
