@@ -181,3 +181,10 @@ questionsDiv.appendChild(createSubmit)
                 initials: initials,
                 score: timeRemaining
             }
+             console.log(finalScore);
+            var allScores = localStorage.getItem("allScores");
+            if (allScores === null) {
+                allScores = [];
+            } else {
+                allScores = JSON.parse(allScores);
+            }
