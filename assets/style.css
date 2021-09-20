@@ -1,0 +1,35 @@
+#wrapper {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+}
+#startTime {
+  background-color: blue;
+  margin-left: 33%;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+}
+#questionsDiv {
+  margin: 20px;
+}
+
+#currentTime {
+  float: right;
+}
+
+#goBack {
+  background-color: blue;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  left: 55%;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+}
