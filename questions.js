@@ -157,3 +157,8 @@ function allDone() {
 
   questionsDiv.appendChild(createLabel)
 }
+// input
+var createInput = document.createElement('input')
+createInput.setAttribute('type', 'text')
+createInput.setAttribute('id', 'initials')
+createInput.textContent = ''
