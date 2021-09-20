@@ -125,3 +125,12 @@ function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
+var createH1 =document.createElement("h1");
+createH1.setAttribute("id" ,"createH1");
+createH1.textContent = "Finish!"
+ questionsDiv.appendChild(createH1);
+
+ var createP = document.createElement("p");
+    createP.setAttribute("id", "createP");
+
+    questionsDiv.appendChild(createP);
