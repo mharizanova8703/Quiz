@@ -196,5 +196,8 @@ createSubmit.addEventListener('click', function () {
     // moving to final page
     window.location.replace('./HighScores.html')
   }
-})
-}
+});
+
+
+
+
