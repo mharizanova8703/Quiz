@@ -67,3 +67,24 @@ timer.addEventListener('click', function () {
   }
   render(questionIndex)
 })
+
+// Renders questions and choices to page: 
+function render(questionIndex) {
+   
+    questionsDiv.innerHTML = "";
+    ulCreate.innerHTML = "";
+    // loops to loop through all info in array
+    for (var i = 0; i < questions.length; i++) {
+       
+        var userQuestion = questions[questionIndex].title;
+        var userChoices = questions[questionIndex].choices;
+        questionsDiv.textContent = userQuestion;
+    }
+     userChoices.forEach(function (newItem) {
+        var listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        questionsDiv.appendChild(ulCreate);
+        ulCreate.appendChild(listItem);
+        listItem.addEventListener("click", (compare));
+    })
+}
