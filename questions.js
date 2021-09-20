@@ -197,3 +197,4 @@ createSubmit.addEventListener('click', function () {
     window.location.replace('./HighScores.html')
   }
 })
+}
