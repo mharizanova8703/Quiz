@@ -9,6 +9,7 @@
   box-shadow: 5px 5px palevioletred;
 }
 #startTime {
+  font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
   margin-left: 33%;
   padding: 15px 32px;
@@ -24,6 +25,7 @@
 }
 
 #goBack {
+  font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
   position: relative;
   padding: 10px;
@@ -37,6 +39,7 @@
 }
 
 #clear {
+  font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
   position: relative;
   padding: 10px;
@@ -56,6 +59,7 @@ textarea {
   margin: 20px;
 }
 #Submit {
+  font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
   margin-left: 33%;
   padding: 15px 32px;
@@ -73,4 +77,9 @@ input {
 }
 h1 {
   text-align: center;
+  font-family: 'Grechen Fuemen', cursive;
+}
+p {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 20px;
 }
