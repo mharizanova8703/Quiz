@@ -162,3 +162,9 @@ var createInput = document.createElement('input')
 createInput.setAttribute('type', 'text')
 createInput.setAttribute('id', 'initials')
 createInput.textContent = ''
+// submit
+var createSubmit = document.createElement('button')
+createSubmit.setAttribute('type', 'submit')
+createSubmit.setAttribute('id', 'Submit')
+createSubmit.textContent = 'Submit'
+questionsDiv.appendChild(createSubmit)
