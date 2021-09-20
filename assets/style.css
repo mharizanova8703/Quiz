@@ -33,3 +33,13 @@
   text-align: center;
   text-decoration: none;
 }
+#clear {
+  background-color: rgb(0, 217, 255);
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  right: 5%;
+  text-align: center;
+}
