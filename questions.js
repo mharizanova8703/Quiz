@@ -127,6 +127,9 @@ function compare(event) {
   }
   questionsDiv.appendChild(createDiv)
 }
+
+//apend last page
+
 function allDone() {
   questionsDiv.innerHTML = ''
   currentTime.innerHTML = ''
@@ -136,10 +139,11 @@ function allDone() {
   createH1.textContent = 'Finish!'
   questionsDiv.appendChild(createH1)
 
+  //Paragraph
   var createP = document.createElement('p')
   createP.setAttribute('id', 'createP')
-
   questionsDiv.appendChild(createP)
+
   //Calculate  the time and replace it with score
   if (secondLeft >= 0) {
     var timeRemaining = secondsLeft
@@ -189,7 +193,7 @@ createSubmit.addEventListener('click', function () {
     allScores.push(finalScore)
     var newScore = JSON.stringify(allScores)
     localStorage.setItem('allScores', newScore)
-    // Travels to final page
+    // moving to final page
     window.location.replace('./HighScores.html')
   }
 })

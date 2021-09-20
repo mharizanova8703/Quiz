@@ -93,6 +93,11 @@ li {
   font-size: 18px;
   color: white;
 }
+a {
+  color: black;
+  font-size: 20px;
+  font-family: 'Grechen Fuemen', cursive;
+}
 
 #createDiv {
   margin-top: 20px;
