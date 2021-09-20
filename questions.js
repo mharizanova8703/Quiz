@@ -122,15 +122,25 @@ function compare(event) {
   questionsDiv.appendChild(createDiv)
 }
 function allDone() {
-    questionsDiv.innerHTML = "";
-    currentTime.innerHTML = "";
+  questionsDiv.innerHTML = ''
+  currentTime.innerHTML = ''
 
-var createH1 =document.createElement("h1");
-createH1.setAttribute("id" ,"createH1");
-createH1.textContent = "Finish!"
- questionsDiv.appendChild(createH1);
+  var createH1 = document.createElement('h1')
+  createH1.setAttribute('id', 'createH1')
+  createH1.textContent = 'Finish!'
+  questionsDiv.appendChild(createH1)
 
- var createP = document.createElement("p");
-    createP.setAttribute("id", "createP");
+  var createP = document.createElement('p')
+  createP.setAttribute('id', 'createP')
 
-    questionsDiv.appendChild(createP);
+  questionsDiv.appendChild(createP)
+  //Calculate  the time and replace it with score
+  if (secondLeft >= 0) {
+    var timeRemaining = secondsLeft
+    var createP2 = document.createElement('p')
+    clearInterval(holdInterval)
+    createP.textContent = 'Your final score is: ' + timeRemaining
+
+    questionsDiv.appendChild(createP2)
+  }
+}
