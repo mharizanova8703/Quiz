@@ -121,3 +121,7 @@ function compare(event) {
   }
   questionsDiv.appendChild(createDiv)
 }
+function allDone() {
+    questionsDiv.innerHTML = "";
+    currentTime.innerHTML = "";
+
