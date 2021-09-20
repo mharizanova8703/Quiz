@@ -5,8 +5,19 @@ var questions = [
     answer: '  template',
   },
   {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-        answer: "console log"
-    },
+    title:
+      'A very useful tool for used during development and debugging for printing content to the debugger is:',
+    choices: ['Javascript', 'terminal / bash', 'for loops', 'console log'],
+    answer: 'console log',
+  },
+  {
+    title: 'Arrays in Javascript can be used to store ____.',
+    choices: [
+      'numbers and strings',
+      'other arrays',
+      'booleans',
+      'all of the above',
+    ],
+    answer: 'all of the above',
+  },
 ]
