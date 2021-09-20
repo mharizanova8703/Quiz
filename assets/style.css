@@ -17,17 +17,20 @@
   color: white;
 }
 #questionsDiv {
+  font-family: 'Grechen Fuemen', cursive;
   margin: 20px;
+  color: black;
 }
 
 #currentTime {
   float: right;
+  size: 30px;
 }
 
 #goBack {
   font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
-  position: relative;
+  position: absolute;
   padding: 10px;
   font-size: 20px;
   color: white;
@@ -41,12 +44,12 @@
 #clear {
   font-family: 'Grechen Fuemen', cursive;
   background-color: plum;
-  position: relative;
+  position: absolute;
   padding: 10px;
   font-size: 20px;
   color: white;
   top: 30%;
-  right: 5%;
+  right: 50%;
   text-align: center;
 }
 
