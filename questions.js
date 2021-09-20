@@ -1,3 +1,4 @@
+// this is a var  with  array and object
 var questions = [
   {
     title: 'What is a class in Java?:',
@@ -32,3 +33,6 @@ var questions = [
     answer: 'parentheses',
   },
 ]
+//declared variables
+var score = 0
+var questionIndex = 0
