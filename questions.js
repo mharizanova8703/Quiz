@@ -5,6 +5,7 @@ var questions = [
     choices: ['strings', 'alerts', 'numbers', ' template'],
     answer: '  template',
   },
+
   {
     title:
       'A very useful tool for used during development and debugging for printing content to the debugger is:',
@@ -68,23 +69,41 @@ timer.addEventListener('click', function () {
   render(questionIndex)
 })
 
-// Renders questions and choices to page: 
+// Renders questions and choices to page:
 function render(questionIndex) {
-   
-    questionsDiv.innerHTML = "";
-    ulCreate.innerHTML = "";
-    // loops to loop through all info in array
-    for (var i = 0; i < questions.length; i++) {
-       
-        var userQuestion = questions[questionIndex].title;
-        var userChoices = questions[questionIndex].choices;
-        questionsDiv.textContent = userQuestion;
-    }
-     userChoices.forEach(function (newItem) {
-        var listItem = document.createElement("li");
-        listItem.textContent = newItem;
-        questionsDiv.appendChild(ulCreate);
-        ulCreate.appendChild(listItem);
-        listItem.addEventListener("click", (compare));
-    })
+  questionsDiv.innerHTML = ''
+  ulCreate.innerHTML = ''
+  // loops to loop through all info in array
+  for (var i = 0; i < questions.length; i++) {
+    var userQuestion = questions[questionIndex].title
+    var userChoices = questions[questionIndex].choices
+    questionsDiv.textContent = userQuestion
+  }
+  userChoices.forEach(function (newItem) {
+    var listItem = document.createElement('li')
+    listItem.textContent = newItem
+    questionsDiv.appendChild(ulCreate)
+    ulCreate.appendChild(listItem)
+    listItem.addEventListener('click', compare)
+  })
 }
+function compare(event) {
+    var element = event.target;
+
+    if (element.matches("li")) {
+
+        var createDiv = document.createElement("div");
+        createDiv.setAttribute("id", "createDiv");
+       
+        if (element.textContent == questions[questionIndex].answer) {
+            score++;
+            createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+         
+        } else {
+         
+            secondsLeft = secondsLeft - penalty;
+            createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+        }
+
+    }
+    questionIndex++;
