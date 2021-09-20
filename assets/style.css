@@ -57,6 +57,7 @@ button {
 textarea {
   width: 90%;
   margin: 20px;
+  font-family: 'Grechen Fuemen', cursive;
 }
 #Submit {
   font-family: 'Grechen Fuemen', cursive;
@@ -82,4 +83,18 @@ h1 {
 p {
   font-family: 'Grechen Fuemen', cursive;
   font-size: 20px;
+}
+
+li {
+  background-color: purple;
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+}
+
+#createDiv {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
 }
