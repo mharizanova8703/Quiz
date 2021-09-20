@@ -1,11 +1,17 @@
 // this is a var  with  array and object
 var questions = [
   {
-    title: 'What is a class in Java?:',
-    choices: ['strings', 'alerts', 'numbers', ' template'],
-    answer: '  template',
-  },
+    title: 'How many types of operators in JavaScript?:',
 
+    choices: [
+      'Arithmetic operators',
+      'Comparison operators',
+      'Logical operators',
+      ' Assignment operators',
+      'Conditional operators',
+    ],
+    answer: 'all of the above',
+  },
   {
     title:
       'A very useful tool for used during development and debugging for printing content to the debugger is:',
