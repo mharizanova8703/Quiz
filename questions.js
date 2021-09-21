@@ -111,7 +111,7 @@ function compare(event) {
     }
   }
   questionIndex++
-  if (questionIndex >= questions.length) {
+  if (questionIndex === questions.length) {
     // All done will append last page with user stats
     allDone()
     createDiv.textContent =
@@ -129,6 +129,7 @@ function compare(event) {
 }
 
 //apend last page
+var timeRemaining
 
 function allDone() {
   questionsDiv.innerHTML = ''
@@ -145,8 +146,8 @@ function allDone() {
   questionsDiv.appendChild(createP)
 
   //Calculate  the time and replace it with score
-  if (secondLeft >= 0) {
-    var timeRemaining = secondsLeft
+  if (secondsLeft >= 0) {
+    timeRemaining = secondsLeft
     var createP2 = document.createElement('p')
     clearInterval(holdInterval)
     createP.textContent = 'Your final score is: ' + timeRemaining
@@ -160,18 +161,19 @@ function allDone() {
   createLabel.textContent = 'Enter your initials: '
 
   questionsDiv.appendChild(createLabel)
+  questionsDiv.appendChild(createInput)
+  questionsDiv.appendChild(createSubmit)
 }
 // input
 var createInput = document.createElement('input')
 createInput.setAttribute('type', 'text')
 createInput.setAttribute('id', 'initials')
-createInput.textContent = ''
+// createInput.textContent = ''
 // submit
 var createSubmit = document.createElement('button')
 createSubmit.setAttribute('type', 'submit')
 createSubmit.setAttribute('id', 'Submit')
 createSubmit.textContent = 'Submit'
-questionsDiv.appendChild(createSubmit)
 
 createSubmit.addEventListener('click', function () {
   var initials = createInput.value
@@ -194,10 +196,6 @@ createSubmit.addEventListener('click', function () {
     var newScore = JSON.stringify(allScores)
     localStorage.setItem('allScores', newScore)
     // moving to final page
-    window.location.replace('./HighScores.html')
+    window.location.replace('./scores.html')
   }
-});
-
-
-
-
+})
