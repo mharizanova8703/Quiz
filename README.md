@@ -15,3 +15,12 @@ This application  has the following  features:
 *  Answer  are recording through  an event listener
 
 <img width="1440" alt="Screen Shot 2021-09-22 at 8 29 01 AM" src="https://user-images.githubusercontent.com/85656320/134343809-0fbde71c-a6d0-432b-9b99-6d31ccdd576b.png">
+
+
+
+ * An appended HTML page that features:
+ * Final score which is calculated using time remaining
+ * A Summary of how many questions answered correctly
+ * Input area to record initials
+ * A Submit button
+ * Submit buttom saves initials and score to local storage
