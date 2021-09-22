@@ -9,6 +9,7 @@ var questions = [
       'Logical operators',
       ' Assignment operators',
       'Conditional operators',
+      'all of the above',
     ],
     answer: 'all of the above',
   },
