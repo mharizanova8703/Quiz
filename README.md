@@ -24,3 +24,6 @@ This application  has the following  features:
  * Input area to record initials
  * A Submit button
  * Submit buttom saves initials and score to local storage
+
+<img width="1440" alt="Screen Shot 2021-09-22 at 8 38 07 AM" src="https://user-images.githubusercontent.com/85656320/134345075-f0a110dc-15e6-4d18-9968-f9aa2dc5dc81.png">
+
