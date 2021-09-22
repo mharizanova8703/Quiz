@@ -1,5 +1,7 @@
 # Quiz
- 
+  https://mharizanova8703.github.io/Quiz/
+  
+  
 This is a timed quiz.
 Build with HTML, CSS and Javascript. This quiz highlights  the use of usung Javascript to make a dynamic changes to an HTML document.
 
