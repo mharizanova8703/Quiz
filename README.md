@@ -26,4 +26,16 @@ This application  has the following  features:
  * Submit buttom saves initials and score to local storage
 
 <img width="1440" alt="Screen Shot 2021-09-22 at 8 38 07 AM" src="https://user-images.githubusercontent.com/85656320/134345075-f0a110dc-15e6-4d18-9968-f9aa2dc5dc81.png">
+ 
+ This Quiz has script of:
+ * Questions contained in an array variable with objects
+ * An event listener on all list choices
+ * An event listener (onclick) that generates time interval
+ * Two Javascript Page ,Contains:
+ *  Variables, including arrays with object 
+ *  if/else if statements
+ *   * For Loops 
+ *  * Functions
+ *   * Local Storage set
+
 
