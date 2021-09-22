@@ -13,3 +13,5 @@ This application  has the following  features:
 
 * If questions are answered incorrectly , 5 seconds are deducted off remaining time
 *  Answer  are recording through  an event listener
+
+<img width="1440" alt="Screen Shot 2021-09-22 at 8 29 01 AM" src="https://user-images.githubusercontent.com/85656320/134343809-0fbde71c-a6d0-432b-9b99-6d31ccdd576b.png">
